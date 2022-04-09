@@ -124,6 +124,14 @@ aside li{
   padding-bottom: 1rem;
 }
 
+aside .logo{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transform: translateX(-10px); /*move left a bit*/
+  margin-top: 1rem;
+}
+
 /* * * * * * *
     4.Main 
     Content
