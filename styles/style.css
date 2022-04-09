@@ -12,6 +12,74 @@ body{
 header{
   background-color: red;
   grid-area: header;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+    "search notifications"
+    "user buttons";
+  align-items: center;
+  gap: 20px;
+}
+
+header > *{
+  padding-left: 20px;
+}
+
+.search-group{
+  grid-area: search;
+  background-color:brown;
+  display: flex;
+  gap: 20px;
+}
+
+.search-group input{
+  width: 80%;
+}
+
+.notifications{
+  grid-area: notifications;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.notifications div img:nth-child(2){
+  padding-left: 20px;
+}
+
+.user{
+  grid-area: user;
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+    "image greeting"
+    "image name";
+  align-items: center;
+}
+
+.user img{
+  grid-area: image;
+}
+
+.user .greeting{
+  grid-area: greeting;
+  align-self: end;
+}
+
+.user .name{
+  grid-area: name;
+  align-self: start;
+}
+
+.buttons{
+  grid-area: buttons;
+  background-color:darkgoldenrod;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 aside{
