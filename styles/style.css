@@ -154,7 +154,7 @@ header > *{
 * * * * * * */
 
 aside{
-  background-color: green;
+  background-color: var(--blue);
   grid-area: aside;
   display: grid;
   grid-template-rows: auto auto 1fr;
@@ -184,7 +184,7 @@ aside .logo{
 * * * * * * */
 
 main{
-  background-color: blue;
+  background-color: var(--grey);
   grid-area: main;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -200,7 +200,6 @@ main{
 * * * * * * * * */
 
 .projects{
-  background-color: aliceblue;
   grid-area: projects;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -226,7 +225,6 @@ main{
 * * * * * * * * * * * */
 
 .announcements{
-  background-color: chartreuse;
   grid-area: announcements;
   margin: 1.5rem;
   display: flex;
@@ -234,7 +232,6 @@ main{
 }
 
 .announce-content{
-  background-color: aliceblue;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -246,7 +243,6 @@ main{
 * * * * * * * * */
 
 .trending{
-  background-color: darkorchid;
   grid-area: trending;
   margin: 1.5rem;
   display: flex;
@@ -254,7 +250,6 @@ main{
 }
 
 .trending-content{
-  background-color: aliceblue;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -262,7 +257,6 @@ main{
 }
 
 .trending-item{
-  background-color: bisque;
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-template-rows: repeat(2, 1fr);
