@@ -4,6 +4,9 @@
     2.Header
     3.Sidebar
     4.Main Content
+      4.1 Projects
+      4.2 Announcements
+      4.3 Trending
 * * * * * * * * * * * * * * */
 
 
@@ -149,6 +152,10 @@ main{
   gap: 20px;
 }
 
+/* * * * * * * * *
+  4.1 Projects
+* * * * * * * * */
+
 .projects{
   background-color: aliceblue;
   grid-area: projects;
@@ -171,11 +178,19 @@ main{
   border: 1px solid black;
 }
 
+/* * * * * * * * * * * *
+  4.2 Announcements
+* * * * * * * * * * * */
+
 .announcements{
   background-color: chartreuse;
   grid-area: announcements;
   margin: 1.5rem;
 }
+
+/* * * * * * * * *
+  4.3 Trending
+* * * * * * * * */
 
 .trending{
   background-color: darkorchid;
