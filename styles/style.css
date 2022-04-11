@@ -76,7 +76,13 @@ header > *{
 }
 
 .notifications div img:nth-child(2){
-  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.notifications img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .user{
