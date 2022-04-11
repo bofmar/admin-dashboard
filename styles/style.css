@@ -13,6 +13,12 @@
 /* * * * * * *
   1.Global
 * * * * * * */
+:root{
+  --blue: #60A5FA;
+  --white: #F0F9FF;
+  --yellow: #FCD34D;
+}
+
 body{
   height: 100vh;
   width: 100vw;
