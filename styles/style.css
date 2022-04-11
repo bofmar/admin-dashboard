@@ -29,6 +29,7 @@ body{
   grid-template-areas: 
     "aside header"
     "aside main";
+  font-family: 'Orbitron', sans-serif;
 }
 
 a{
