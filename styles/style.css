@@ -203,7 +203,8 @@ aside a::after{
   transition: transform 250ms ease-out;
 }
 
-aside a:hover::after{
+aside a:hover::after,
+aside a:focus::after{
   transform: scaleX(1);
   transform-origin: left;
 }
