@@ -52,6 +52,7 @@ header{
     "user buttons";
   align-items: center;
   gap: 20px;
+  margin-bottom: 15px;
 }
 
 header > *{
@@ -88,6 +89,10 @@ header > *{
   border-radius: 50%;
 }
 
+.notifications div{
+  font-weight: bold;
+}
+
 .user{
   grid-area: user;
   display: grid;
@@ -97,20 +102,29 @@ header > *{
     "image greeting"
     "image name";
   align-items: center;
+  gap: 10px;
 }
 
 .user img{
   grid-area: image;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  justify-self: end;
 }
 
 .user .greeting{
   grid-area: greeting;
   align-self: end;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .user .name{
   grid-area: name;
   align-self: start;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .buttons{
