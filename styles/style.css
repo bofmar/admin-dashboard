@@ -163,6 +163,10 @@ aside{
   justify-content: center;
   gap: 50px;
   padding-top: 10px;
+
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 aside li{
@@ -178,11 +182,30 @@ aside .logo{
   gap: 1rem;
   transform: translateX(-10px); /*move left a bit*/
   margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
-.logo svg{
-  width: 50px;
-  height: 50px;
+aside a{
+  position: relative;
+}
+
+aside a::after{
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background-color: var(--white);
+  bottom: -3px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 250ms ease-out;
+}
+
+aside a:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 /* * * * * * *
