@@ -17,7 +17,7 @@
   --blue: #60A5FA;
   --white: #F0F9FF;
   --yellow: #FCD34D;
-  --grey: #94A3B8;
+  --grey: #CBD5E1;
 }
 
 body{
@@ -62,10 +62,16 @@ header > *{
   grid-area: search;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .search-group input{
   flex: 1;
+  border-radius: 15px;
+  border-style: none;
+  background-color: var(--grey);
+  height: 2rem;
+  padding: 1rem;
 }
 
 .notifications{
