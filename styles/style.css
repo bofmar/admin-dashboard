@@ -52,7 +52,9 @@ header{
     "user buttons";
   align-items: center;
   gap: 20px;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  box-shadow: 19px -10px 30px 0px rgba(0, 0, 0, 0.26);
 }
 
 header > *{
