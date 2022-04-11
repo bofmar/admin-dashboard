@@ -206,4 +206,39 @@ main{
   background-color: darkorchid;
   grid-area: trending;
   margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-content{
+  background-color: aliceblue;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.trending-item{
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+    "image handle"
+    "image target";
+  align-items: center;
+}
+
+.trending-item img{
+  grid-area: image;
+}
+
+.user-handle{
+  grid-area: handle;
+  align-self: end;
+}
+
+.target-project{
+  grid-area: target;
+  align-self: start;
 }
