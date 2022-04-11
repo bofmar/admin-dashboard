@@ -72,11 +72,8 @@ header > *{
   grid-area: notifications;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-}
-
-.notifications div img:nth-child(2){
-  margin-left: 20px;
+  justify-content: center;
+  gap: 40px;
 }
 
 .notifications img{
