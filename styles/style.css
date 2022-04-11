@@ -140,4 +140,45 @@ aside .logo{
 main{
   background-color: blue;
   grid-area: main;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "projects announcements"
+    "projects trending";
+  gap: 20px;
+}
+
+.projects{
+  background-color: aliceblue;
+  grid-area: projects;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  margin: 1.5rem;
+}
+
+.projects h3{
+  grid-column: 1 / -1;
+  margin-bottom: -1.5rem;
+}
+
+.card-wrap{
+  width: 350px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.announcements{
+  background-color: chartreuse;
+  grid-area: announcements;
+  margin: 1.5rem;
+}
+
+.trending{
+  background-color: darkorchid;
+  grid-area: trending;
+  margin: 1.5rem;
 }
