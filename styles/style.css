@@ -352,11 +352,34 @@ main{
   flex-direction: column;
 }
 
+.trending > h3{
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
 .trending-content{
   flex: 1;
+  width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: var(--white);
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trending-wrap{
+  height: 80%;
+  width: 80%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .trending-item{
@@ -367,6 +390,7 @@ main{
     "image handle"
     "image target";
   align-items: center;
+  gap: 5px;
 }
 
 .trending-item img{
@@ -379,9 +403,12 @@ main{
 .user-handle{
   grid-area: handle;
   align-self: end;
+  font-size: 0.9rem;
 }
 
 .target-project{
   grid-area: target;
   align-self: start;
+  font-size: 0.8rem;
+  color: var(--grey-words);
 }
