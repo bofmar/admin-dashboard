@@ -260,6 +260,12 @@ main{
   grid-template-rows: repeat(3, auto);
   align-content: space-around;
   align-items: center;
+  cursor: pointer;
+  transition: transform 500ms ease-out;
+}
+
+.card-wrap:hover{
+  transform: scale(1.05);
 }
 
 .card-wrap h3,
@@ -339,6 +345,7 @@ main{
 
 .announce-item{
   border-bottom: 1px solid var(--grey);
+  cursor: pointer;
 }
 
 /* * * * * * * * *
@@ -391,6 +398,12 @@ main{
     "image target";
   align-items: center;
   gap: 5px;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+}
+
+.trending-item:hover{
+  transform: scale(1.1);
 }
 
 .trending-item img{
